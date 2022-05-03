@@ -142,5 +142,5 @@ LOGOUT_REDIRECT_URL = "/"
 
 STATICFILES_DIRS = [
     BASE_DIR / "static",
-    'localproj/static/',
+    'mysite/static/',
 ]

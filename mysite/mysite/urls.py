@@ -30,6 +30,6 @@ urlpatterns = [
     # default path the user is brought to
     path('', include("main.urls")),
     path('', include("django.contrib.auth.urls")),
-    path('testlang/', include('testlang.urls', namespace='testlang')),
+    # path('testlang/', include('testlang.urls', namespace='testlang')),
 ]
 

@@ -12,6 +12,8 @@ urlpatterns = [
     path("home/", views.home, name="home"),
     path("create/", views.create, name="create"),
     path("view/", views.view, name="view"),
-    path('testlang', views.testlang, name='testlang'),
+    path("products/", views.products, name="products"),
+    path("register/", views.register, name="register"),
+    # path('testlang', views.testlang, name='testlang'),
     # path("v1/", views.v1, name="view 1"),
 ]

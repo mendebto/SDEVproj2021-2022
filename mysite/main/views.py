@@ -47,6 +47,15 @@ def home(request):
     return render(request, 'main/home.html', {'trans': trans})
 
 
+def products(request):
+    trans = _('hello')
+    return render(request, 'main/products.html', {'trans': trans})
+
+
+def register(request):
+    trans = _('hello')
+    return render(request, 'main/products.html', {'trans': trans})
+
 def create(response):
     if response.method == "POST":
         # POST holds information from form
