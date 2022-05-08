@@ -2,10 +2,10 @@
 from django.urls import path
 
 from . import views
-# from mysite.views import *
 
 # if in the home directory of the site, display the view.index page
 app_name = 'mysite'
+
 urlpatterns = [
     path("<int:id>", views.index, name="index"),
     path("", views.home, name="home"),
@@ -14,6 +14,6 @@ urlpatterns = [
     path("view/", views.view, name="view"),
     path("products/", views.products, name="products"),
     path("register/", views.register, name="register"),
-    # path('testlang', views.testlang, name='testlang'),
-    # path("v1/", views.v1, name="view 1"),
+    path('testlang', views.testlang, name='testlang'),
 ]
+

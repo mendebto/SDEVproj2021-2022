@@ -7,94 +7,94 @@
 {% block title %}{% trans "Serene" %}{% endblock %}
 
 {% block content %}
-<div class="jumbotron">
-  <div class="container text-center">
-      <div class="text">
-        <h1></h1>
-      </div>
-
-    <br><center><img src="Assets/Images/image11.jpg"  width="1450" height="400" alt="pic" class="center"></center><br>
-
-    <br><h2 class="title">{% trans "Latest Arrival" %}</h2>
-
-    <div class="col-lg-9">
-        <div class="row">
-          <div class="col">
-              {% trans "Showing all results" %}
-          </div>
-
-          <div class="col">
-              <select class="form-control">
-                  <option value="">{% trans "Default Sorting" %}</option>
-                  <option value="popularity">{% trans "Sorting by popularity" %}</option>
-                  <option value="average">{% trans "Sorting by average" %}</option>
-                  <option value="latest">{% trans "Sorting by latest" %}</option>
-                  <option value="low">{% trans "Sorting by low" %}</option>
-                  <option value="high">{% trans "Sorting by high" %}</option>
-              </select>
-          </div>
-      </div>
-
-
-      <div>&nbsp;</div>
-      <div>&nbsp;</div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-3 col-md-6 col-lg-4">
-            <div class="panel panel-primary">
-              <div class="panel-heading">{% trans "Black Marble Dress" %}</div>
-              <div class="panel-body"><img src="{% static 'mysite/mysite/static/assests/product1.jpg' %}" class="img-responsive" style="width:100%" alt="Image"></div>
-              <div class="panel-footer">{% trans "Price $25.16" %}<br><a href="#" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a></div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-md-6 col-lg-4">
-            <div class="panel panel-danger">
-              <div class="panel-heading">{% trans "Grey T-shirt" %}</div>
-              <div class="panel-body"><img src="product1.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-              <div class="panel-footer">{% trans "Price $16" %}<br><a href="#" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a></div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-md-6 col-lg-4">
-            <div class="panel panel-success">
-              <div class="panel-heading">{% trans "Red Roses Dress" %}</div>
-              <div class="panel-body"><img src="mysite/mysite/static/en/img/product3.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-              <div class="panel-footer">{% trans "Price $20" %}<br><a href="#" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a></div>
-            </div>
-          </div>
+  <div class="jumbotron">
+    <!--<div class="container text-center">-->
+        <div class="text">
+          <h1>{% trans "Serene" %}</h1>
         </div>
-      </div><br>
 
-      <!-- Sorting by <div class="row"> -->
-      <div>&nbsp;</div>
-      <div>&nbsp;</div>
+      <br><center><img src="{% static 'assests/logo.png' %}" alt="pic" class="center"></center><br>
+
+      <br><h2 class="title">{% trans "Latest Arrival" %}</h2>
+
+      <div class="col-lg-9">
+          <div class="row">
+            <div class="col">
+                {% trans "Showing all results" %}
+            </div>
+
+            <div class="col">
+                <select class="form-control">
+                    <option value="">{% trans "Default Sorting" %}</option>
+                    <option value="popularity">{% trans "Sorting by popularity" %}</option>
+                    <option value="average">{% trans "Sorting by average" %}</option>
+                    <option value="latest">{% trans "Sorting by latest" %}</option>
+                    <option value="low">{% trans "Sorting by low" %}</option>
+                    <option value="high">{% trans "Sorting by high" %}</option>
+                </select>
+            </div>
+        </div>
+
+
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
 
         <div class="container">
           <div class="row">
-            <div class="col-sm-3 col-md-6 col-lg-4">
+            <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
               <div class="panel panel-primary">
-                <div class="panel-heading">{% trans "High Trousers" %}</div>
-                <div class="panel-body"><img src="mysite/mysite/static/en/img/product4.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-                <div class="panel-footer">{% trans "Price $14.16" %}<br><a href="#" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a></div>
+                <div class="panel-heading">{% trans "Black Marble Dress" %}</div>
+                <div class="panel-body"><img src="{% static 'assests/product1.jpg' %}" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-footer">{% trans "Price $25.16" %}<br><a href="#" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a></div>
               </div>
             </div>
-            <div class="col-sm-3 col-md-6 col-lg-4">
-              <div class="panel panel-primary">
-                <div class="panel-heading">{% trans "White Shoes" %}</div>
-                <div class="panel-body"><img src="mysite/mysite/static/en/img/product5.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-                <div class="panel-footer">{% trans "Price $20.16" %}<br><a href="#" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a></div>
+            <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+              <div class="panel panel-danger">
+                <div class="panel-heading">{% trans "Grey T-shirt" %}</div>
+                <div class="panel-body"><img src="{% static 'assests/product2.jpg' %}" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-footer">{% trans "Price $16" %}<br><a href="#" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a></div>
               </div>
             </div>
-            <div class="col-sm-3 col-md-6 col-lg-4">
-              <div class="panel panel-primary">
-                <div class="panel-heading">{% trans "Floral Skirt" %}</div>
-                <div class="panel-body"><img src="mysite/mysite/static/en/img/product6.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-                <div class="panel-footer">{% trans "Price $35.16" %}<br><a href="#" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a></div>
+            <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+              <div class="panel panel-success">
+                <div class="panel-heading">{% trans "Red Roses Dress" %}</div>
+                <div class="panel-body"><img src="{% static 'assests/product3.jpg' %}" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-footer">{% trans "Price $20" %}<br><a href="#" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a></div>
               </div>
             </div>
           </div>
-        </div><br><br>
+        </div><br>
+
+        <!-- Sorting by <div class="row"> -->
+        <div>&nbsp</div>
+        <div>&nbsp</div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">{% trans "High Trousers" %}</div>
+                  <div class="panel-body"><img src="{% static 'assests/product4.jpg' %}" class="img-responsive" style="width:100%" alt="Image"></div>
+                  <div class="panel-footer">{% trans "Price $14.16" %}<br><a href="#" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a></div>
+                </div>
+              </div>
+              <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">{% trans "White Shoes" %}</div>
+                  <div class="panel-body"><img src="{% static 'assests/product5.jpg' %}" class="img-responsive" style="width:100%" alt="Image"></div>
+                  <div class="panel-footer">{% trans "Price $20.16" %}<br><a href="#" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a></div>
+                </div>
+              </div>
+              <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">{% trans "Floral Skirt" %}</div>
+                  <div class="panel-body"><img src="{% static 'assests/product6.jpg' %}" class="img-responsive" style="width:100%" alt="Image"></div>
+                  <div class="panel-footer">{% trans "Price $35.16" %}<br><a href="#" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a></div>
+                </div>
+              </div>
+            </div>
+          </div><br><br>
+        </div>
       </div>
-    </div>
-</div>
+  </div>
 {% endblock %}

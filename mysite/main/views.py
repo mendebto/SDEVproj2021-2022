@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from .models import ToDoList, Item
 from .forms import CreateNewList
-from django.utils.translation import gettext as _
+from django.utils.translation import gettext_lazy as _
 
 
 # Create your views here.
@@ -43,18 +43,16 @@ def index(response, id):
 
 
 def home(request):
-    trans = _('hello')
-    return render(request, 'main/home.html', {'trans': trans})
+    return render(request, 'main/home.html', {})
 
 
 def products(request):
-    trans = _('hello')
-    return render(request, 'main/products.html', {'trans': trans})
+    return render(request, 'main/products.html', {})
 
 
 def register(request):
-    trans = _('hello')
-    return render(request, 'main/products.html', {'trans': trans})
+    return render(request, 'main/register.html', {})
+
 
 def create(response):
     if response.method == "POST":

@@ -1,21 +1,4 @@
 
- .navbar {
-    /*
-    height:10%; /*take up entire height
-    width:160px;
-    position: fixed;
-    z-index:1;
-    top:0;
-    left:0;
-     /*dark colour
-    overflow-x: :hidden;
-    padding-top:5px;
-    */
-    margin-bottom: 50px;
-    border-radius: 0;
-    background-color:#111;
-}
-
 .navbar a {
     padding:6px 8px 6px 16px;
     text-decoration:none;
@@ -29,7 +12,7 @@
 }
 
 .main{
-    margin-left:100px;
+
     padding: 0px 10px;
 }
 
@@ -38,8 +21,235 @@
   margin-bottom: 0;
 }
 
-/* Add a gray background color and some padding to the footer */
-.footer {
-  background-color: #f2f2f2;
-  padding: 25px;
+*{
+	margin:0;
+	padding:0;
+	font-family: Arial;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.container{
+	height: 100vh;
+	width: 100%;
+	background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("../assests/image1.jpg") no-repeat;
+	background-position: center;
+	background-size: 100%;
+	padding-left: 5%;
+	padding-right: 5%;
+	box-sizing: border-box;
+	position: relative;
+}
+
+h1 {
+	color: white;
+	margin-top: 150px;
+	text-align: left;
+
+}
+
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+	font-family: courier new;
+	font-weight: bold;
+	font-size: 17px;
+	color: #FCD1D1;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.7s ease;
+}
+
+ul li a:hover{
+	background-color: #ffffff;
+	color: #FCD1D1;
+}
+ul li.active a{
+	background-color: #FCD1D1;
+	color: #ffffff;
+}
+
+.logo img{
+	float: left;
+	width: 300px;
+	height: auto;
+}
+
+.text{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.text h1{
+	color: #FCD1D1;
+	font-size: 60px;
+	font-family: courier new;
+
+}
+
+.boxes{
+	position: absolute;
+	top: 88%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+    font-size: 20px;
+
+}
+
+.bxs{
+	border: 2px solid #FCD1D1;
+	padding: 10px 30px;
+	color: #fff;
+	text-decoration: none;
+	font-family: courier new;
+	transition: 0.7s ease;
+	font-weight: bold;
+}
+
+.bxs:hover{
+	background-color: #FCD1D1;
+	color: #ffffff;
+}
+
+.music{
+	display: none;
+}
+
+.pictures img {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	background-color: yellow;
+
+}
+
+.pictures2 img {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	border-radius: 5px;
+	background-color: yellow;
+
+}
+
+.textWithImage {
+	margin: 10px;
+}
+
+.textWithImage p {
+	display: inline-block;
+	vertical-align: top;
+	width:65%;
+}
+
+.textWithImage img {
+	margin: 10px;
+	display: inline-block;
+	border-radius: 50%;
+	width: 30%;
+}
+
+p {
+
+	font-family: Arial;
+	font-size: 20px;
+	color: black;
+
+}
+
+h2 {
+
+    text-align: center;
+    color: #6e67667e
+}
+
+.wrapper{
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	transform: translate(-50%,-50%);
+	max-width: 350px;
+	width: 100%;
+	background: #fff
+	padding: 25px;
+	border-radius: 5px;
+	box-shadow: 4px 4px 2px rgba(254,236,164,1);
+}
+
+.wrapper h2{
+	text-align: center;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: orange;
+	text-decoration: underline;
+}
+
+.wrapper .input_field{
+	margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+	width: 100%;
+	margin-bottom: 1px solid #e0e0e0;
+	padding: 10px;
+}
+
+.wrapper textarea{
+	height: 80px;
+	resize: none;
+}
+
+.wrapper .btn input[type"submit"]{
+	border:0;
+	margin-top:15px;
+	padding: 10px;
+	width: 100%;
+	background: #fece0c;
+	color: #332902;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight:vold;
+	border-radius:25px;
+	cursor: pointer;
+}
+
+.wrapper #error_message{
+	margin-bottom: 20px;
+	padding: 0px;
+	background: #FCD1D1;
+	text-align: center;
+	font-size: 14px;
+	transition: all 0.5s ease;
+}
+
+table {
+	position: absolute;
+	top: 30%;
+	left: 15%
+
+}
+
+header, footer {
+	background-color: black;
+	height: 3%;
+	text-align: center;
+	color: white;

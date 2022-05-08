@@ -12,7 +12,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="shortcut Icon" type="image/png" href="{% static 'mysite/mysite/static/assests/img.png' %}">
-        <link href='{% static "assests/css/styles.css" %}' type="text/css" rel="stylesheet" />
+        <link href='{% static "css/styles.css" %}' rel="stylesheet" />
+        <link href='{% static "css/main.css" %}' rel="stylesheet" />
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
@@ -54,7 +55,7 @@
                         <li><a href="/view">{% trans "View" %}</a></li>
                         <li><a href="/register">{% trans "Register" %}</a></li>
                         <li><a href="/login">{% trans "Sign In" %}</a></li>
-                    </li>
+
                 </ul>
                 <ul class="nav navbar-right">
                     <li>
@@ -83,73 +84,36 @@
                     <h1 class="mt-2">{% trans "Serene" %}</h1>
                     <hr class="mt-0 mb-4">
                         {% block content %}
-                            <h2 id="local-date">{% now "SHORT_DATE_FORMAT" %}</h2>
-
                         {% endblock %}
-                        <br>
-                        <br><center><img src="Assets/Images/image12.jpg"  width="1470"
-                            height="450" alt="pic" class="center"></center><br>
-
-                        <br>
-					    <br><center><img src="{% static 'mysite/main/static/assests/image12.jpg' %}" alt="My image"  width="1470"
-						height="450" class="center"></center><br>
-
-
-                        <div>&nbsp;</div>
-                        <div>&nbsp;</div>
-                        <div>&nbsp;</div>
-
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="row boxed">
-                                    <div class="col-lg-3 mt-4">
-                                        <h2 class="news" style="color:rgb(0, 0, 0);"><b>Subscribe</b></h2>
-                                        <h2 class="news" style="color:#242424;"><b>Weekly Newsletter</b></h2>
-                                    </div>
-
-                                    <div class="col-lg-5 mt-5 text-center">
-                                        <form class="form-inline">
-                                            <div class="form-group mx-sm-3 mb-2">
-                                                <label for="inputEmail" class="sr-only">Your Email Address</label>
-                                                <input type="email" class="form-control form-control-lg" id="inputEmail" placeholder="Your Email Address">
-                                            </div>
-                                            <button type="submit" class="btn btn-dark btn-lg">Subscribe</button>
-                                        </form>
-                                    </div>
-
-                                    <div class="col-lg-4 mt-5">
-                                        <a href="#" class="social-icon"><i class="fa fa-facebook-f"></i></a>
-                                        <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
-                                        <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
-                                        <a href="#" class="social-icon"><i class="fa fa-google-plus"></i></a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                         <br>
-
-                        <center><div class="col-lg-4">
-                            <h3 class="contact-heading">CONTACT US</h3>
-                            <p class="contact-info"><i class="fa fa-map-marker"></i>  Grangegorman, TUD, Dublin 7, Ireland</p>
-                            <p class="contact-info"><i class="fa fa-phone"></i> +353 123 4567</p>
-                            <p class="contact-info"><i class="fa fa-envelope"></i>  info@serene.com</p>
-                            <p class="contact-info"><i class="fa fa-globe"></i> www.serene.com</p>
-                        </div></center>
-
-                        <div>
-                            <footer>Site by Paris, Mende, Sadhbh &copy; 2022</footer>
-                        <div>
-                    </div>
+                            <!--<h2 id="local-date">{% now "SHORT_DATE_FORMAT" %}</h2>-->
+                </div>
             </div>
         </div>
-
-
-
-
         <!-- Option 2: Separate Popper and Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     </body>
+
+    <section class="page-section">
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                    <div class="col-lg-4 mt-5">
+                        <a href="#" class="social-icon"><i class="fa fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fa fa-google-plus"></i></a>
+                    </div>
+            </div>
+        </div>
+
+        <center><div class="col-lg-4">
+            <h3 class="contact-heading">CONTACT US</h3>
+            <p class="contact-info"><i class="fa fa-map-marker"></i>  Grangegorman, TUD, Dublin 7, Ireland</p>
+            <p class="contact-info"><i class="fa fa-phone"></i> +353 123 4567</p>
+            <p class="contact-info"><i class="fa fa-envelope"></i>  info@serene.com</p>
+            <p class="contact-info"><i class="fa fa-globe"></i> www.serene.com</p>
+        </div></center>
+    </footer>
+    </section>
 </hmtl>

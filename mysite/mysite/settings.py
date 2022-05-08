@@ -14,6 +14,7 @@ from pathlib import Path
 from django.utils.translation import gettext_lazy as _
 import os
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -41,6 +42,7 @@ INSTALLED_APPS = [
     "crispy_forms",
     'main.apps.MainConfig',
     'register.apps.RegisterConfig',
+    # 'main',
 ]
 
 MIDDLEWARE = [
@@ -113,12 +115,13 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
+USE_L10N = True
+
 USE_TZ = True
 
-# Languages
 LANGUAGES = (
     ('en', _('English')),
-    ('kr', _('Korean')),
+    ('ko-kr', _('Korean')),
 )
 
 LOCALE_PATHS = (
@@ -128,7 +131,11 @@ LOCALE_PATHS = (
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    'mysite/static/',
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
@@ -140,7 +147,4 @@ CRISPY = TEMPLATE_PACK = "bootstrap4"
 LOGIN_REDIRECT_URL = "/"  # home
 LOGOUT_REDIRECT_URL = "/"
 
-STATICFILES_DIRS = [
-    BASE_DIR / "static",
-    'mysite/static/',
-]
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
