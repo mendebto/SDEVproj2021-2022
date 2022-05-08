@@ -1,17 +1,22 @@
 
- .sidenav {
-    height:100%; /*take up entire height*/
+ .navbar {
+    /*
+    height:10%; /*take up entire height
     width:160px;
     position: fixed;
     z-index:1;
     top:0;
     left:0;
-    background-color:#111; /*dark colour*/
+     /*dark colour
     overflow-x: :hidden;
-    padding-top:20px;
+    padding-top:5px;
+    */
+    margin-bottom: 50px;
+    border-radius: 0;
+    background-color:#111;
 }
 
-.sidenav a {
+.navbar a {
     padding:6px 8px 6px 16px;
     text-decoration:none;
     font-size:25px;
@@ -24,6 +29,17 @@
 }
 
 .main{
-    margin-left:160px;
+    margin-left:100px;
     padding: 0px 10px;
+}
+
+/* Remove the jumbotron's default bottom margin */
+.jumbotron {
+  margin-bottom: 0;
+}
+
+/* Add a gray background color and some padding to the footer */
+.footer {
+  background-color: #f2f2f2;
+  padding: 25px;
 }
